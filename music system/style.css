@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main_div{
+    background-color: #f6f6f6;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-content:center;
+}
+
+.music_container{
+    height: 30rem;
+    width: 21rem;
+    background-color: white;
+    text-align: center;
+    padding: 3.3rem;
+    border-radius: 0.8rem;
+    box-shadow: 0rem 0.7rem 2rem 0.3rem rgb(0, 0, 0,0.1);
+}
+
+#title{
+    color: rgb(63, 18, 18);
+    font-size: 1.7rem;
+    font-weight: 550;
+    text-transform: uppercase;
+    box-shadow: 0rem 0.1rem 0.2rem 0rem rgb(0, 0, 0,0.3);
+    word-spacing: 0.4rem;
+    letter-spacing: 0.1rem;
+}
+
+#artist{
+margin: 1rem;
+font-size: 1.3rem;
+}
+
+.img_container img{
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    box-shadow: 0rem 0.1rem 0.3rem 0.2rem rgb(0, 0, 0,0.3);
+    margin: 2rem;
+
+}
+
+.controls{
+    margin: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.controls .fa-solid{
+    cursor: pointer;
+    filter: drop-shadow(16px 16px 20px rgb(220, 189, 189));
+}
+
+.controls .fa-play{
+    background-color: black;
+    border: 1rem solid black;
+    border-radius: 50%;
+    color: white;
+}
+
+.controls .fa-pause{
+    background-color: black;
+    border: 1rem solid black;
+    border-radius: 50%;
+    color: white;
+}
+
+.controls .fa-solid:hover{
+    color: gray;
+    box-shadow: 0rem 0.1rem 0.3rem 0.2rem rgb(0, 0, 0,0.3);
+}
+
