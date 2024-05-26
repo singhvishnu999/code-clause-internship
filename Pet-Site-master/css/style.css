@@ -1,0 +1,14 @@
+.row {
+    padding: 12px;
+}
+body {
+    text-align: center;
+}
+form {
+    color: white;
+}
+.adoption-details {
+    background-image: url("file:///home/lewis/Documents/my-projects/Pet-Site/img/bc511516-cdfb-4558-8440-555b8e19c328.webp");
+    background-size: 1110px 500px;
+    display: none;
+}

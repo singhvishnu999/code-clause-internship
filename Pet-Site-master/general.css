@@ -1,0 +1,572 @@
+/* default styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    list-style: none;
+    transition: all .3s linear;
+}
+
+html {
+    overflow-x: hidden;
+    font-size: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-fluid {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0%;
+    width: 100%;
+}
+
+/* Navigation bar */
+nav {
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.3);
+}
+
+.navcontent {
+    flex-basis: 100%;
+    padding-top: 1%;
+    display: flex;
+    list-style: none;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav li {
+    font-weight: 700;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding: 1%;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: white;
+    padding: 10%;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #3434a34b 0%, #0000002f 100%);
+}
+
+.logo {
+    flex-basis: 25%;
+    display: flex;
+    margin-left: 2%;
+}
+
+.in {
+    display: flex;
+    font-size: 2rem;
+}
+
+/* body */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+}
+
+#home {
+    justify-content: center;
+    color: #000000;
+    font-weight: 900;
+    height: 30vh;
+    margin-top: 5rem;
+    width: 100%;
+    background: linear-gradient(135deg, rgba(52, 52, 163, 0.711), rgba(255, 255, 255, 0.815)), url("img/two-race-dogs-750570_640.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro h5 {
+    font-style: italic;
+    font-size: 1.4rem;
+}
+
+.intro h4 {
+    font-size: 1.7rem;
+}
+
+/* adopt */
+.adopt-pets .board {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.adopt-pets h1 {
+    margin-top: 1rem;
+}
+
+.adopt-pets {
+    background-color: #3434a30a;
+}
+
+.adoption-details {
+    background-image: url("img/bc511516-cdfb-4558-8440-555b8e19c328.webp");
+    background-size: contain;
+    display: none;
+    padding: 2%;
+    width: 100%;
+    color: white;
+}
+
+.adoption-details1 {
+    background-image: url("img/bc511516-cdfb-4558-8440-555b8e19c328.webp");
+    background-size: contain;
+    display: none;
+    padding: 2%;
+    color: white;
+    width: 100%;
+}
+
+.buy-details {
+    background-image: url("img/two-race-dogs-750570_640.jpg");
+    background-size: contain;
+    display: none;
+    padding: 2%;
+    width: 100%;
+    color: white;
+}
+
+.buy-details1 {
+    background-image: url("img/two-race-dogs-750570_640.jpg");
+    background-size: contain;
+    display: none;
+    padding: 2%;
+    color: white;
+    width: 100%;
+}
+
+/* about us  */
+.about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.about-us p {
+    text-align: justify;
+}
+
+.about-us h1 {
+    margin-top: 3rem;
+}
+
+.img-one {
+    filter: drop-shadow(-2px 15px 15px rgb(255, 255, 255));
+    box-shadow: 0px 0px 10px black;
+    background-size: cover;
+}
+
+.cust {
+    border: 1px solid #e3e3e3;
+    margin-bottom: 1.5rem;
+    box-shadow: 0px 4px 10px rgb(0, 0, 0, .25);
+}
+
+.img-two {
+    background-size: cover;
+    filter: drop-shadow(-2px 15px 15px rgb(255, 255, 255));
+    box-shadow: 0px 0px 10px black;
+}
+
+
+.newsletter {
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    align-self: baseline;
+    justify-self: baseline;
+    background: rgba(112, 112, 112, 0.075);
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    border-radius: 0%;
+    margin-bottom: 2rem;
+}
+
+.newsletter h5 {
+    color: #3434A3;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.newbtn {
+    background-color: black;
+    color: white;
+    outline: 2px solid;
+    letter-spacing: .2rem;
+}
+
+.newsletter form {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* buy pets  */
+.buy-pets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #3434a30a;
+}
+
+.buy-pets h1 {
+    margin-top: 1rem;
+}
+
+.padd {
+    padding: 3%;
+}
+
+.board {
+    box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.25);
+    border-radius: 10px;
+    height: 100%;
+}
+
+.btn-cust2 {
+    background-color: #3434A3;
+    padding: .5% 4%;
+    border-radius: 2px;
+    color: white;
+    font-weight: 900;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding: 0% 1%;
+    border-top: 2px solid #3434A3;
+}
+
+.ftext {
+    font-family: Robotoregular;
+    font-size: 22px;
+    padding: 0%;
+}
+
+.pett {
+    font-family: Robotobold;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    padding: 0%;
+}
+
+.sitet {
+    background: linear-gradient(135deg, #3434a3 55%, #000000 45%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.socialicons {
+    padding: 0% 1%;
+    align-items: center;
+    display: flex;
+    flex-basis: 25%;
+    justify-content: space-evenly;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.fa-facebook {
+    color: white;
+}
+
+.fa-twitter {
+    color: white;
+}
+
+.fa-google {
+    color: white;
+}
+
+.fa-linkedin {
+    color: white;
+}
+
+.fa-youtube {
+    color: white;
+}
+
+.fa-instagram {
+    color: white;
+}
+
+.fa:hover {
+    overflow: hidden;
+    color: black;
+    cursor: pointer;
+    background: linear-gradient(135deg, #3434A3 0%, #4C83FF 100%);
+}
+
+.main {
+    background: white;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: left;
+    color: #000000;
+    font-weight: 900;
+    height: 90vh;
+    width: 45vh;
+}
+
+#sellus {
+    background: #e5e5e5;
+}
+
+.sellone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+}
+
+.sell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.dlogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0%;
+}
+
+.pdetails {
+    display: flex;
+    flex-direction: column;
+    width: 88%;
+}
+
+.fully {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.fully label {
+    align-self: flex-start;
+}
+
+.ddiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4%;
+    width: 100%;
+}
+
+.donbut {
+    font-size: 1.2rem;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25);
+    letter-spacing: 0.05em;
+    padding: 1% 4%;
+}
+
+.sell a {
+    color: black;
+    padding: 1%;
+    background-color: white;
+    border: 4px solid black;
+    border-radius: 4px;
+}
+
+.ilogo {
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    justify-content: right;
+}
+
+.logtxt {
+    padding: 0%;
+    font-size: 20px;
+    font-family: Robotobold;
+    margin: 0%;
+}
+
+#otxt {
+    margin: 0%;
+    padding: 0%;
+}
+
+#famtxt {
+    color: #3434A4;
+    padding: 0%;
+}
+
+#name12,
+#comment12 {
+    border-radius: 4px;
+    border: none;
+    height: 4vh;
+    padding: 0% 4%;
+    margin-top: 3%;
+}
+
+.end {
+    width: 100%;
+    background-color: #0e0d0d;
+    color: #fff;
+}
+
+.top_header {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.top_header section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.top_header span {
+    padding: 0 1rem;
+}
+
+.top_header .fa {
+    color: #cecfe2;
+    font-size: 35px;
+}
+
+.end .border-shape {
+    width: 40%;
+}
+
+.end .border-shape::before {
+    width: 100%;
+    left: 120px;
+}
+
+.end .border-shape::after {
+    width: 100%;
+    right: 120px;
+}
+
+#adopt {
+    align-self: center;
+    width: 40%;
+}
+
+.form-id {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 900;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 5%;
+    margin: 2%;
+    width: 60%;
+}
+
+.end .bottom_content section {
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: Center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+.bottom_content a {
+    margin: 0 20px;
+    color: rgba(255, 255, 255, 0.7);
+    transition: 0.5s;
+}
+
+.bottom_content a:hover {
+    color: rgba(255, 255, 255, 1);
+}

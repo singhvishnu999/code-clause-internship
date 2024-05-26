@@ -3,7 +3,7 @@ let play = document.getElementById("play");
 let prev = document.getElementById('prev');
 let next = document.getElementById('next');
 let img = document.querySelector('img');
-let songName = document.getElementById('song-name')
+let songName = document.getElementById('song_name')
 
 let isPLaying = false;
 
@@ -14,7 +14,7 @@ let songs = [
     image : 'image1',
 },
 {
-    name : "pagal kaile",
+    name : "Pagal kaile ba",
     music : 'music2',
     image : 'image2'
 },
@@ -66,6 +66,6 @@ next.addEventListener("click", ()=>{
     else i++;
     audio.src = 'music/'+songs[i].music+'.mp3' ;
     img.src =  "music/"+songs[i].image+".jpeg";
-    songName.textContent = songs[i].name;
+    songName.innerHTML= songs[i].name;
     playMusic();
 })

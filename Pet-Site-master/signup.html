@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>LogIn and SignUp Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body class="container-fluid cardx">
+    <div class="box card fully">
+        <img alt="Qries" src="img/Screenshot 2022-01-18 at 03-30-46 Gray Dog Pet Logo.png" width="100px" height="100px">
+        <div class="page">
+            <div class="header">
+                <a id="login" class="active" href="#">login</a>
+                <a id="signup" href="#signup">signup</a>
+            </div>
+            <br>
+            <br>
+            <div id="errorMsg"></div>
+            <div class="content">
+                <form class="login" name="loginForm" onsubmit="return validateLoginForm()" method="POST">
+                    <input type="text" name="name" id="logName" placeholder="Username" class="form-control card  cust">>
+                    <br>
+                    <br>
+                    <input type="password" name="password" id="logPassword" placeholder="Password"
+                        class="form-control card  cust">>
+                    <br>
+                    <br>
+                    <div id="check">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+                    <br>
+                    <br>
+                    <br><br>
+                    <a href="index.html"><input type="subbmit" role="button" class="btn-cust2" value="Login"></a>
+                    <br>
+                    <br>
+                    <a href="#">Forgot Password?</a>
+                </form>
+                <form class="signup" name="signupForm" onsubmit="return validateSignupForm()" method="POST">
+                    <input type="email" name="email" id="signEmail" placeholder="Email"
+                        class="form-control card  cust">>
+                    <input type="text" name="name" id="signName" placeholder="Username"
+                        class="form-control card  cust">>
+                    <input type="password" name="password" id="signPassword" placeholder="Password"><br>
+                    <br>
+                    <br>
+                    <input type="submit" value="SignUp">
+                    <div class="sign">
+                        <h3 style="color: aliceblue;">Or Sign Up Using</h3>
+                        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="JS/script.js"></script>
+</body>
